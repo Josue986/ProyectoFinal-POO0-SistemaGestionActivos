@@ -1,20 +1,16 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package sistemagestionactivos;
 
-/**
- *
- * @author jotue
- */
+import Conexion.ActivoDAOImpl;
+import DAOInterface.ActivoDAO;
+
 public class SistemaGestionActivos {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // 1. Instanciamos el DAO (la persistencia)
+        ActivoDAO dao = new ActivoDAOImpl();     
+        // 2. Instanciamos la Vista (cuando la tengas creada)      
+        // 3. Instanciamos el Controlador, pasando la vista y el dao       
+        // 4. Arrancamos    
+        System.out.println("Sistema inicializado. Falta conectar la Vista y el Controlador.");
     }
-    
 }
