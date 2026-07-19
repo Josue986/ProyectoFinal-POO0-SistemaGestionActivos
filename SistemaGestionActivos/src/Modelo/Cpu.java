@@ -8,12 +8,12 @@ package Modelo;
  *
  * @author jotue
  */
-public class Case extends Hardware {
+public class Cpu extends Hardware {
    private String Procesador;
    private String memoriaRAM;
    private String almacenamiento;
 
-    public Case(String Procesador, String memoriaRAM, String almacenamiento, int anniosUso, String idActivo, String nombreActivo, String marca, String tipo, double costoAdquisicion, double costoMantenimiento, String estadoActivo, Custodio custodio) {
+    public Cpu(String Procesador, String memoriaRAM, String almacenamiento, int anniosUso, String idActivo, String nombreActivo, String marca, String tipo, double costoAdquisicion, double costoMantenimiento, String estadoActivo, Custodio custodio) {
         super(anniosUso, idActivo, nombreActivo, marca, tipo, costoAdquisicion, costoMantenimiento, estadoActivo, custodio);
         this.Procesador = Procesador;
         this.memoriaRAM = memoriaRAM;

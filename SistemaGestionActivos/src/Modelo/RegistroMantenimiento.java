@@ -10,7 +10,7 @@ import java.util.Date;
  * @author jotue
  */
 public class RegistroMantenimiento {
-   private String idMantenimiento;
+   private int idMantenimiento;
    private String detallesMantenimiento;
    private Date fechaInicio;
    private Date fechaFinal;
@@ -21,7 +21,7 @@ public class RegistroMantenimiento {
    public RegistroMantenimiento(){
    }
 
-    public RegistroMantenimiento(String idMantenimiento, String detallesMantenimiento, Date fechaInicio, Date fechaFinal, double costo, Activo activo, Usuario usuario) {
+    public RegistroMantenimiento(int idMantenimiento, String detallesMantenimiento, Date fechaInicio, Date fechaFinal, Activo activo, Usuario usuario) {
         this.idMantenimiento = idMantenimiento;
         this.detallesMantenimiento = detallesMantenimiento;
         this.fechaInicio = fechaInicio;
@@ -30,11 +30,11 @@ public class RegistroMantenimiento {
         this.activo = activo;
         this.usuario = usuario;
     }
-   public String getIdMantenimiento() {
+   public int getIdMantenimiento() {
        return idMantenimiento;
    }
 
-   public void setIdMantenimiento(String idMantenimiento) {
+   public void setIdMantenimiento(int idMantenimiento) {
        this.idMantenimiento = idMantenimiento;
    }
 
